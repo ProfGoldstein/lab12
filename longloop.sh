@@ -1,6 +1,6 @@
 #!/bin/bash
 # longloop.sh
-# Demonstration code for CSIS400
+# Demonstration code for CSIS333
 
 # run this in background with:
 # ./longloop.sh &
@@ -17,7 +17,7 @@ date >> longloop.out
 COUNT=1
 
 # Loop as long as COUNT is less than or equal to 1100
-until [ $COUNT -eq 1100 ]
+until [ $COUNT -eq 15000 ]
     do
         # What does the next line do?
         md5sum longloop.out > /dev/null
