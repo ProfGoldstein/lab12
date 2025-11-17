@@ -17,7 +17,7 @@ date >> longloop.out
 COUNT=1
 
 # Loop as long as COUNT is less than or equal to 1100
-until [ $COUNT -eq 3000 ]
+until [ $COUNT -eq 1100 ]   # Change to 3000 for Pi 5, 800 for Pi 3
     do
         # What does the next line do?
         md5sum longloop.out > /dev/null
